@@ -1,0 +1,285 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: 'DynaPuff', cursive;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(290deg,#7b1adc,#b90c51);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  margin-top: 8px;
+}
+.menu-bar ul {
+  display: flex;
+  list-style: none;
+}
+.menu-bar ul li {
+  text-transform:capitalize;
+  padding: 6px 6px;
+  border-radius: 20px;
+  margin:5px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+}
+.menu-bar {
+  margin-right: 10px;
+}
+.logo h3 {
+  text-transform: uppercase;
+  font-weight:500;
+  padding-left: 25px;
+  margin:5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-bar ul li:hover,.active{
+  background-color: #fff;
+}
+.shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 500px;
+  box-shadow: -3px 1px 15px rgb(0 0 0 / 36%);
+  border-radius: 20px;
+  transform: translateX(-10px);
+}
+
+.content h3 {
+  transform:translateY(-80px)
+  translateX(175px)
+}
+
+.content img {
+  width: 50px;
+  height: 50px;
+}
+
+.content p {
+  display: inline-block;
+  padding-left:10px;
+  text-transform: uppercase;
+}
+.skill-1 img {
+  width: 55px;
+  height: 55px;
+}
+.skills {
+  display: flex;
+  align-items: center;
+}
+.skill-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(-60px);
+}
+.skill-2 {
+  display: flex;
+  align-items: center;
+  transform: translateX(-40px);
+}
+
+.skill-3 {
+  display: flex;
+  align-items: center;
+}
+
+.css-logo {
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(23, 146, 234);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-logo p {
+  font-family: system-ui,sans-serif;
+  font-weight: 700;
+  position: relative;
+  top: 0px;
+  left: -5px;
+  z-index: 100;
+  user-select: none;
+}
+
+
+/*    media query    */
+
+/* defulte phones */
+@media (max-width:405px){ 
+  .logo h3{
+  font-size:10px;
+  margin: 0;
+  padding-left:10px;
+}
+.content {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+.skills {
+  padding-right: 20px;
+}
+.content h3 {
+  font-size: 1em;
+    transform:translateY(-80px) translateX(120px);
+}
+.menu-bar {
+  margin: 5px;
+  padding: 2px;
+  font-size: .5em;
+}
+.menu-bar ul li{
+  padding: 2px;
+  margin:6px;
+  font-size: .8em;
+}
+.logo h3 {
+  font-size: 1em;
+}
+.skills p {
+  font-size: .5em;
+}
+.skills img {
+  width: 30px;
+  height: 30px;
+}
+.skill-3 .css-logo {
+  width: 30px;
+  height: 30px;
+}
+}
+
+  /* Extra small devices (portrait phones, less than 576px)*/
+  @media (min-width:210px) and (max-width:576px) { 
+  .logo h3{
+    font-size:1em;
+    margin: 0;
+    padding-left:10px;
+    white-space: nowrap;
+    transform: translateX(100%);
+  }
+  .logo {
+    justify-content: center;
+  }
+.content {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  .skills {
+    padding-right: 20px;
+  }
+  .content h3 {
+    font-size: 1em;
+      transform:translateY(-80px) translateX(120px);
+  }
+  .menu-bar {
+    margin: 0px;
+    padding: 3px;
+    font-size: 2em;
+    width: 100%;
+    transform: translateY(50px) translateX(-100px);
+    background-color: rgba(0, 0, 0, 0.234);
+    border-radius: 10px;
+    text-align: center;
+  }
+.menu-bar ul li{
+  padding: 5px;
+  margin:3px;
+  font-size: 1.5px;
+}
+.logo h3 {
+  font-size: 1em;
+}
+.skills p {
+  font-size: .5em;
+}
+.skills img {
+  width: 30px;
+  height: 30px;
+}
+.skill-3 .css-logo {
+  width: 30px;
+  height: 30px;
+}
+.content {
+  transform: translateY(50px);
+  width: 240px;
+  height: 230px;
+}
+.content h3 {
+  white-space: nowrap;
+  transform: translateY(-140px) translateX(10px);
+}
+.content .skills .skill-1 {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+.skill-2 {
+  position: absolute;
+  top: 38%;
+  left: 28.2%;
+}
+.skill-3 {
+  position: absolute;
+  top:65%;
+  left: 12.5%;
+}
+.skill-3 .css-logo {
+  width: 46px;
+  height: 46px;
+}
+.skill-3 p:nth-child(2) {
+  font-size: 18px;
+}
+
+.skills img {
+  width: 45px;
+  height:45px;
+}
+.skills p {
+  font-size:20px;
+  letter-spacing: 2px;
+}
+
+
+}
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width:768px){ 
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:992px){ 
+
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
